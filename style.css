@@ -13,13 +13,28 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background: radial-gradient(circle, #000000, #0a0a0a);
         color: #0f0;
+        background-color: black;
         overflow: hidden;
+        position: relative;
+        flex-direction: column;
+        margin: 0;
     }
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        z-index: 0;
+    }
+
     .stopwatch {
         text-align: center;
         animation: pulse 2s infinite;
+        z-index: 10;
     }
     .timer {
         font-size: 5rem;
